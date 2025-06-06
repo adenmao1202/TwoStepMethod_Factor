@@ -1,0 +1,15 @@
+price_to_vwap
+momentum_24h
+liquidity_risk
+trade_size_change
+momentum_8h
+momentum_12h
+price_impact
+macd_line
+hl_volume_position
+macd_histogram
+vpin
+volume_12h
+volume_8h
+volume_24h
+macd_signal

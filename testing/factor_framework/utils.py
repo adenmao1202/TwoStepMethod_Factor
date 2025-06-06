@@ -65,7 +65,7 @@ def neutralize_factor(factor, neutralizers):
 
 
 # cut outliers 
-def winsorize_factor(factor, limits=(0.01, 0.01)):
+def winsorize_factor(factor, limits=(0.001, 0.001)):
     """Winsorize factor values, limiting the influence of extreme values"""
     if not isinstance(factor, pd.Series):
         try:
