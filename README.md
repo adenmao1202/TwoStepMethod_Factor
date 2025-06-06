@@ -13,6 +13,9 @@
 ### 資料視覺化
 生成價格和交易量的時間序列圖表，直觀展示數據特性
 
+#### Winsorization 結果
+![Winsorization Results](./charts/winzorization.png)
+
 ---
 
 ## 2. 因子生成階段
@@ -63,6 +66,9 @@
 - 繪製因子與**未來收益率的散點圖**
 - 顯示**因子分布圖**，檢查偏斜度和異常值
 
+#### 因子相關性分析
+![Factor Correlation Matrix](./charts/corr.png)
+
 ---
 
 ## 4. 因子選擇階段
@@ -89,6 +95,15 @@
 ### 特徵重要性
 生成不同預測時間範圍的**特徵重要性比較圖**，分析哪些因子在不同時間範圍內更重要
 
+#### 因子選擇結果
+![Factor Selection Results](./charts/final_factors_result.png)
+
+#### IC by Feature Category
+![IC by Feature Category](./charts/ic_by_feature_category.png)
+
+#### 不同時間範圍的因子IC分析
+![Factor IC for Different Periods](./charts/factor_ic_for_diff_periods.png)
+
 ---
 
 ## 5. 回測評估階段
@@ -103,6 +118,12 @@
   - IC t-stat
 - 比較**IC和ML方法選擇的重疊性**
 
+#### IC 分析結果
+![IC and Significance Analysis](./charts/ic_and_significance.png)
+
+#### IC 選擇結果比較
+![Select by IC Results](./charts/selectByIC_result.png)
+
 ### 分組回測
 - 根據因子值將資產分為 **N 組** (N 設為5組)
 - 計算每組的**累積收益率**
@@ -112,7 +133,51 @@
   - Sharpe 比率
   - 最大回撤等
 
+#### 因子回測結果
+
+<div align="center">
+
+| 1小時預測 | 4小時預測 | 24小時預測 |
+|:---------:|:---------:|:----------:|
+| ![Factor Result 1](./charts/factor_result1.png) | ![Factor Result 2](./charts/factor_result2.png) | ![Factor Result 3](./charts/factor_result3.png) |
+
+</div>
+
+#### 詳細回測分析
+
+<div align="center">
+
+| 分析結果 4 | 分析結果 5 |
+|:---------:|:---------:|
+| ![Factor Result 4](./charts/factor_result4.png) | ![Factor Result 5](./charts/factor_result5.png) |
+
+</div>
+
+#### 進階分析結果
+
+<div align="center">
+
+| 分析結果 6 | 分析結果 7 |
+|:---------:|:---------:|
+| ![Factor Result 6](./charts/factor_result6.png) | ![Factor Result 7](./charts/factor_result7.png) |
+
+</div>
+
 > **框架特色**：由於不想使用現有因子回測框架如alphalens等，因此自建了一個完整框架
+
+---
+
+## 📊 完整結果總覽
+
+### 關鍵發現
+1. **因子相關性分析**顯示了不同因子間的關聯程度
+2. **兩階段選擇流程**有效篩選出最具預測力的因子
+3. **多時間框架分析**揭示了因子在不同時間範圍的表現差異
+4. **IC分析**證實了選定因子的統計顯著性
+5. **分組回測**驗證了策略的實際盈利能力
+
+### 性能指標摘要
+通過系統性的因子工程和嚴格的回測驗證，本框架成功識別並驗證了具有顯著預測能力的量化因子，為後續的投資策略構建奠定了堅實基礎。
 
 ---
 
