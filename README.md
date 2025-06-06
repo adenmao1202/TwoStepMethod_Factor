@@ -101,7 +101,6 @@
 - 計算 **IC 統計指標**：
   - IC Mean
   - IC t-stat
-  - IC Win Rate
 - 比較**IC和ML方法選擇的重疊性**
 
 ### 分組回測
