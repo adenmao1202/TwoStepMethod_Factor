@@ -95,9 +95,6 @@
 ### 特徵重要性
 生成不同預測時間範圍的**特徵重要性比較圖**，分析哪些因子在不同時間範圍內更重要
 
-#### 因子選擇結果
-![Factor Selection Results](./charts/final_factors_result.png)
-
 #### IC by Feature Category
 ![IC by Feature Category](./charts/ic_by_feature_category.png)
 
@@ -137,13 +134,10 @@
 
 <div align="center">
 
-| 1小時預測 | 4小時預測 | 24小時預測 |
 |:---------:|:---------:|:----------:|
 | ![Factor Result 1](./charts/factor_result1.png) | ![Factor Result 2](./charts/factor_result2.png) | ![Factor Result 3](./charts/factor_result3.png) |
 
 </div>
-
-#### 詳細回測分析
 
 <div align="center">
 
@@ -152,8 +146,6 @@
 | ![Factor Result 4](./charts/factor_result4.png) | ![Factor Result 5](./charts/factor_result5.png) |
 
 </div>
-
-#### 進階分析結果
 
 <div align="center">
 
@@ -165,6 +157,8 @@
 
 > **框架特色**：由於不想使用現有因子回測框架如alphalens等，因此自建了一個完整框架
 
+#### 因子選擇結果
+![Factor Selection Results](./charts/final_factors_result.png)
 ---
 
 ## 📊 完整結果總覽
